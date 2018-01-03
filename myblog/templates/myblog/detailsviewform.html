@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <div id="hiddiv" style="display: block;">
+      <div>
+        <h2>First script on Django :)</h2></a>
+      </div>
+      <div>
+        <p>Test Model Form</p>
+      </div>
+      <div>
+        <p>{{posts.text}}</p>
+      </div>
+      <div class="date">
+        {%for post in posts%}
+          <a href={{post.redirecturl}}><h3><p>{{post.title}}</p></h3></a>
+          <p>Author: {{post.author}}</p>
+          <p>URL: {{post.redirecturl}}</p>
+          <p><strong>Published Date:</strong> {{post.published_date}}</p>
+          <p>
+              {{post.text}}
+              <br/>
+          </p>
+        {%endfor%}
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>First Script</title>
+  </head>
+  <body>
+    <div>
+      <form action="/user_save_data/" method="post">
+         {% csrf_token %}
+         <!--{{userform}} bnbbb</br> -->
+          <label for="user_namelab">User Name(F): </label>
+          <input id="user_name" type="text" name="name" value=""><br></br>
+          <input type="submit" value="OK">
+      </form>
+    </div>
+  </body>
+</html>

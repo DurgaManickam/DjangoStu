@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <div>
+      <form action="/user_data_form/" method="post">
+        {% csrf_token %}
+        {{form}}
+        <p>Data Saved</p>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+  </body>
+</html>
